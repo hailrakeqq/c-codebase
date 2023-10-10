@@ -7,6 +7,13 @@ struct linkedList *createNode(void *data) {
     exit(1);
   }
 
+  linkedList->head = (struct node *)malloc(sizeof(struct node)); 
+  if (linkedList->head == NULL) {
+    perror("Memory allocation failed.\n");
+    free(linkedList);
+    exit(1);
+  }
+
   linkedList->head->data = data;
   linkedList->head->prevNode = NULL;
   linkedList->head->nextNode = NULL;

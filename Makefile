@@ -4,6 +4,7 @@ SRC_DIR = src
 BUILD_DIR = build
 OUTPUT_TEST = test
 OUTPUT_DEBUG = libDebug
+
 all:
 
 test:

@@ -4,16 +4,8 @@
 #include <stdlib.h>
 #include <string.h>
 
-typedef enum {
-    INT_TYPE,
-    FLOAT_TYPE,
-    CHAR_TYPE,
-    UNKNOWN_TYPE
-} dataType;
-
 struct node {
   void *data;
-  dataType dataType;
 
   struct node *nextNode;
   struct node *prevNode;
